@@ -1,0 +1,117 @@
+.price-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 18px;
+  width: 380px;
+  height: 770px;
+  flex-shrink: 0;
+  overflow: hidden;
+  background-color: $bg-card-clr;
+  box-shadow: $box-shadow-card;
+
+  &__badge {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: -18px;
+    right: -18px;
+    width: 122px;
+    height: 123px;
+  }
+
+  &__badge-rec {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: rotate(-45deg);
+    width: 25px;
+    height: 147px;
+    background-color: #dc3f45;
+  }
+
+  &__badge-text {
+    display: inline-block;
+    min-width: 75px;
+    height: 17px;
+    transform: rotate(90deg);
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    text-transform: uppercase;
+  }
+
+  &__title {
+    margin: 33px 0 0 0;
+    width: 100%;
+    text-align: center;
+    line-height: 43px;
+    font-weight: 700;
+    font-size: 35px;
+  }
+
+  &__title-text {
+    margin: 0;
+    line-height: 24px;
+    font-weight: 300;
+    font-size: 20px;
+  }
+
+  &__price {
+    margin: 33px 0 0 0;
+    padding: 19px 0;
+    width: 100%;
+    line-height: 67px;
+    font-size: 55px;
+    text-align: center;
+  }
+
+  &__info {
+    display: inline-block;
+    margin: 40px 26px;
+    text-align: center;
+    line-height: 18px;
+    font-weight: 300;
+    font-size: 15px;
+  }
+
+  &__options-list {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    width: 100%;
+  }
+
+  &__list-item {
+    display: flex;
+    align-items: center;
+    height: 50px;
+    line-height: 18px;
+    font-weight: 300;
+    font-size: 15px;
+  }
+
+  &__list-item:nth-of-type(odd) {
+    background-color: $bg-odd-li;
+  }
+
+  &__img {
+    padding: 0 22px;
+  }
+
+  &__order-btn {
+    margin: 39px 0 40px;
+    height: 40px;
+    width: 154px;
+    border: none;
+    text-transform: uppercase;
+    line-height: 17px;
+    border-radius: 20px;
+    font-size: 14px;
+    text-align: center;
+    color: $text-clr;
+  }
+}
