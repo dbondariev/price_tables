@@ -1,6 +1,6 @@
 # price-tables
 
-### [Site link]()
+### [Site link](https://dbondariev.github.io/price_table/)
 
 Static non responsive page
 
