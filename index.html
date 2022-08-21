@@ -2,70 +2,112 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
-        integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Table</title>
     <link rel="stylesheet" href="styles.css">
-    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <div class="price-tables">
-        <div class="price-card">
-            <h2 class="price-card__title">Basic</h2>
-            <span class="price-card__title-text">Website</span>
-            <h1 class="price-card__price price-card__price_green">99€</h1>
-            <p class="price-card__info">Simple website made in the world's most popular CMS system, Wordpress.</p>
-            <ul class="price-card__options-list">
-                <li class="price-card__list-item"><i class="li-icon icon_green"></i>Website in WordPress</li>
-                <li class="price-card__list-item"><i class="li-icon icon_green"></i>3 sub pages</li>
-                <li class="price-card__list-item"><i class="li-icon icon_green"></i>Theme customized</li>
-                <li class="price-card__list-item"><i class="li-icon icon_green"></i>Help and guidance</li>
-                <li class="price-card__list-item"><i class="li-icon icon_green"></i>System introduction</li>
-                <li class="price-card__list-item"><i class="li-icon icon_green"></i>2 weeks free support</li>
-            </ul>
-            <button class="price-card__order-btn price-card__order-btn_green">order now</button>
-        </div>
-
-        <div class="price-card">
-            <div class="price-card__badge">
-                <div class="price-card__badge-rec"><span class="price-card__badge-text">popular</span></div>
+    <div class="prices">
+        <div class="price-card basic">
+            <div class="price-card__title">
+                <h2>Basic</h2>
+                <p>Website</p>
             </div>
-            <h2 class="price-card__title">Business</h2>
-            <span class="price-card__title-text">Website</span>
-            <h1 class="price-card__price price-card__price_blue second-card-price">299€</h1>
-            <p class="price-card__info">Advanced website made in the world's most popular CMS system, Wordpress.</p>
-            <ul class="price-card__options-list">
-                <li class="price-card__list-item"><i class="li-icon icon_blue"></i>Website in WordPress</li>
-                <li class="price-card__list-item"><i class="li-icon icon_blue"></i>3-5 sub pages</li>
-                <li class="price-card__list-item"><i class="li-icon icon_blue"></i>Theme customized</li>
-                <li class="price-card__list-item"><i class="li-icon icon_blue"></i>Help and guidance</li>
-                <li class="price-card__list-item"><i class="li-icon icon_blue"></i>System introduction</li>
-                <li class="price-card__list-item"><i class="li-icon icon_blue"></i>1 month free support</li>
-            </ul>
-            <button class="price-card__order-btn price-card__order-btn_blue">order now</button>
+            <div class="price-card__price">
+                <p>99€</p>
+            </div>
+            <div class="price-card__description">
+                <p>
+                    Simple website made in the world's most popular CMS system,
+                    Wordpress.
+                </p>
+            </div>
+            <div class="price-card__options-list">
+                <p><img src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson+25/verification-checkmark-symbol_green.png"
+                        alt="tick_green" />Website in WordPress</p>
+                <p><img src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson+25/verification-checkmark-symbol_green.png"
+                        alt="tick_green" />3 sub pages</p>
+                <p><img src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson+25/verification-checkmark-symbol_green.png"
+                        alt="tick_green" />Theme customized</p>
+                <p><img src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson+25/verification-checkmark-symbol_green.png"
+                        alt="tick_green" />Help and guidance</p>
+                <p><img src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson+25/verification-checkmark-symbol_green.png"
+                        alt="tick_green" />System introduction</p>
+                <p><img src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson+25/verification-checkmark-symbol_green.png"
+                        alt="tick_green" />2 weeks free support</p>
+            </div>
+            <div class="price-card__order-btn">
+                <button type="button">ORDER NOW</button>
+            </div>
         </div>
-
-        <div class="price-card third-card">
-            <h2 class="price-card__title">Webshop</h2>
-            <span class="price-card__title-text">Website</span>
-            <h1 class="price-card__price price-card__price_orange">599€</h1>
-            <p class="price-card__info">Your very own webshop made the world's most popular CMS system, Wordpress.</p>
-            <ul class="price-card__options-list">
-                <li class="price-card__list-item"><i class="li-icon icon_orange"></i>Webshop in WordPress</li>
-                <li class="price-card__list-item"><i class="li-icon icon_orange"></i>3-5 sub pages</li>
-                <li class="price-card__list-item"><i class="li-icon icon_orange"></i>Theme customized</li>
-                <li class="price-card__list-item"><i class="li-icon icon_orange"></i>Help and guidance</li>
-                <li class="price-card__list-item"><i class="li-icon icon_orange"></i>System introduction</li>
-                <li class="price-card__list-item"><i class="li-icon icon_orange"></i>1 month free support</li>
-            </ul>
-            <button class="price-card__order-btn price-card__order-btn_orange">order now</button>
+        <div class="price-card bussines">
+            <div class="price-card__title">
+                <h2>Business </h2>
+                <p>Website</p>
+            </div>
+            <div class="price-card__price bussines_price">
+                <p>299€</p>
+            </div>
+            <div class="price-card__description">
+                <p>
+                    Advanced website made in the world's most popular CMS system, Wordpress.
+                </p>
+            </div>
+            <div class="price-card__options-list">
+                <p><img src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson+25/verification-checkmark-symbol_blue.png"
+                        alt="tick_blue" />Website in WordPress</p>
+                <p><img src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson+25/verification-checkmark-symbol_blue.png"
+                        alt="tick_blue" />3-5 sub pages</p>
+                <p><img src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson+25/verification-checkmark-symbol_blue.png"
+                        alt="tick_blue" />Theme customized</p>
+                <p><img src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson+25/verification-checkmark-symbol_blue.png"
+                        alt="tick_blue" />Help and guidance</p>
+                <p><img src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson+25/verification-checkmark-symbol_blue.png"
+                        alt="tick_blue" />System introduction</p>
+                <p><img src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson+25/verification-checkmark-symbol_blue.png"
+                        alt="tick_blue" />1 month free support</p>
+            </div>
+            <div class="price-card__order-btn bussines_btn">
+                <button type="button">ORDER NOW</button>
+            </div>
+            <div class="banner">
+                <p>POPULAR</p>
+            </div>
+        </div>
+        <div class="price-card webshop">
+            <div class="price-card__title">
+                <h2>Webshop</h2>
+                <p>Website</p>
+            </div>
+            <div class="price-card__price webshop_price">
+                <p>599€</p>
+            </div>
+            <div class="price-card__description">
+                <p>
+                    Your very own webshop made the world's most popular CMS system, Wordpress.
+                </p>
+            </div>
+            <div class="price-card__options-list">
+                <p><img src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson+25/verification-checkmark-symbol_orange.png"
+                        alt="tick_orange" />Webshop in WordPress</p>
+                <p><img src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson+25/verification-checkmark-symbol_orange.png"
+                        alt="tick_orange" />3-5 sub pages</p>
+                <p><img src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson+25/verification-checkmark-symbol_orange.png"
+                        alt="tick_orange" />Theme customized</p>
+                <p><img src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson+25/verification-checkmark-symbol_orange.png"
+                        alt="tick_orange" />Help and guidance</p>
+                <p><img src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson+25/verification-checkmark-symbol_orange.png"
+                        alt="tick_orange" />System introduction</p>
+                <p><img src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson+25/verification-checkmark-symbol_orange.png"
+                        alt="tick_orange" />1 month free support</p>
+            </div>
+            <div class="price-card__order-btn webshop_btn">
+                <button type="button">ORDER NOW</button>
+            </div>
         </div>
     </div>
 </body>

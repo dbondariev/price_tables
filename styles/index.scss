@@ -1,62 +1,135 @@
+@import 'variebles.scss';
 * {
-  box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Montserrat', sans-serif;
 }
-
-@import 'variables';
-@import 'price-card';
-
-.price-tables {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
-  font-family: 'Montserrat', sans-serif;
-  background-color: $bg-tablet-clr;
-  color: $text-clr;
+.prices {
+    background-color: #141b1c;
+    padding: 65px 132px;
+    display: grid;
+    grid-template-columns:minmax(auto,380px) minmax(auto,380px) minmax(auto,380px);
+    grid-gap: 18px;
 }
-
-.price-card__order-btn_green,
-.price-card__price_green {
-  background-color: $green-theme-color;
+.price-card {
+    width: 380px;
+    height: 770px;
+    overflow: hidden;
+    position: relative;
+    background: #334247;
+    box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.087466);
+    color: #FFFFFF;
+    &__title {
+        height: 130px;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+        margin-bottom: 2px;
+        h2 {
+            font-weight: 700;
+            font-size: 35px;
+            line-height: 43px;
+        }
+        p {
+            font-weight: 300;
+            font-size: 20px;
+            line-height: 24px;
+        }
+    }
+    &__price {
+        height: 105px;
+        background-color: $basic;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        p {
+            font-weight: 700;
+            font-size: 55px;
+            line-height: 67px;
+            text-align: center;
+        }
+    }
+    &__description {
+        padding-left: 26px;
+        padding-right: 26px;
+        padding-top: 40px;
+        padding-bottom: 40px;
+        p {
+            font-weight: 300;
+            font-size: 15px;
+            line-height: 18px;
+            text-align: center;
+        }
+    }
+    &__options-list {
+        background-color: #2A3438;
+        p {
+            font-weight: 300;
+            font-size: 15px; 
+            line-height: 50px;
+        }
+        img {
+            margin-left: 22px;
+            margin-right: 22px;
+        }
+    }
+    &__options-list {
+        p:nth-child(2n) {
+         background-color: #334247;
+        }
+     }
+    &__order-btn {
+        padding-top: 39px;
+        display: flex;
+        justify-content: center;
+        button {
+        width: 154px;
+        height: 40px;
+        border-radius: 20px;
+        color: #FFFFFF;
+        font-size: 14px;
+        line-height: 17px;
+        text-align: center;
+        background-color: $basic;
+        border: none;
+        }
+   
+    }
 }
-
-.price-card__order-btn_blue,
-.price-card__price_blue {
-  background-color: $blue-theme-color;
+.bussines_price {
+    background-color: $bussines;
 }
-
-.price-card__order-btn_orange,
-.price-card__price_orange {
-  background-color: $orange-theme-color;
+.bussines_btn {
+    button {
+        background-color: $bussines;
+    }
 }
-
-.third-card-title {
-  margin-top: 36px;
+.webshop_price {
+        background-color: $webshop;
 }
-
-.third-card {
-  margin-right: 0;
-  height: 773px;
-  margin-top: 3px;
+.webshop_btn {
+    button {
+        background-color: $webshop;
+    }
 }
-
-.li-icon {
-  display: inline-block;
-  height: 13px;
-  width: 59px;
-}
-
-.icon_green {
-  background: no-repeat 22px 50%
-    url(https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson+25/verification-checkmark-symbol_green.png);
-}
-
-.icon_blue {
-  background: no-repeat 22px
-    url(https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson+25/verification-checkmark-symbol_blue.png);
-}
-
-.icon_orange {
-  background: no-repeat 22px
-    url(https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson+25/verification-checkmark-symbol_orange.png);
+.banner {
+    width: 150px;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #DC3F45;
+    position: absolute;
+    transform: rotate(45deg);
+    top: 30px;
+    left: 261px;
+    p {
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 17px;
+        color: #FFFFFF;
+    }
 }
