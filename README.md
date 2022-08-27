@@ -14,4 +14,4 @@ Static non responsive page
 
 ### Author
 
-Dima Bondariev
+ Dima Bondariev
